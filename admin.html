@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyprus National Bank | Admin Panel</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f8f9fa; margin: 0; padding: 20px; }
+        .navbar { background: #343a40; color: white; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; border-radius: 5px; }
+        .navbar a { color: white; text-decoration: none; margin-left: 15px; }
+        .container { max-width: 800px; margin: 30px auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
+        .chat-box { border: 1px solid #ced4da; padding: 15px; height: 200px; overflow-y: scroll; background: #fff; margin-bottom: 15px; border-radius: 4px; }
+        input[type="text"], input[type="password"] { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
 
+    <div class="navbar">
+        <span>Cyprus National Bank | Admin Panel</span>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Search</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h3>Admin Chat Dashboard</h3>
+        <div class="chat-box">
+            <p><strong>Gayle Bev:</strong> Developers implemented this new messaging feature that I suggested! What you guys think?</p>
+            <p><strong>Greger Ivayla:</strong> Looks really cool!</p>
+            <p><strong>Jemmy Laurel:</strong> Hey have you guys seen Mrs. Jacobs recently??</p>
+            <p><strong>Olivia Cortez:</strong> No she hasn't been around for a while</p>
+            <p><strong>Jemmy Laurel:</strong> Oh, is she OK?</p>
+        </div>
+
+        <h3>Customer Settings</h3>
+        <form action="/settings" method="POST">
+            <label for="password">Enter a new password / parameter value:</label>
+            <input type="text" id="password" name="password" placeholder="Type input here...">
+            <button type="submit">Save</button>
+        </form>
+    </div>
+
+</body>
+</html>
